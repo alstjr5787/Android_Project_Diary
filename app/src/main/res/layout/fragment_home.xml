@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="9"
+        android:background="#0000FF"
+        android:src="@drawable/wallpaper"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="133dp"
+        android:layout_height="134dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/image1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewQuote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#EDEDED"
+        android:text="Random Quote"
+        android:fontFamily="@font/gookmin"
+        android:textSize="18sp"
+        android:layout_marginTop="40dp"
+        android:textAlignment="center"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/buttonRefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gookmin"
+        android:text="새로고침"
+        android:layout_below="@id/textViewQuote"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>
